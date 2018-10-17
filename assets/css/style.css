@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font: 12px/18px Tahoma, sans-serif;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+.wrapper {
+	min-width: 600px;
+	max-width: 1400px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.headImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.flex-container {
+	display: flex;
+	position: relative;
+	width: auto;
+	height: 300px;
+	margin: 10px;
+	justify-content: space-around;
+}
+
+.flex-container .name {
+	color: rgb(0, 91, 9);
+	background-color: rgb(200, 200, 200, .6);
+	padding: 10px;
+	border-radius: 20px;
+  font-size: 800%;
+	font-weight: bold;
+  margin-top: 0;
+  text-shadow: rgba(0, 0, 0, .7) 5px 5px 5px;
+	font-family: 'Roboto Slab', serif;
+	line-height: 1;
+	align-self: center;
+	text-decoration: none;
+	z-index: 200;
+
+}
+
+.flex-container .presentation {
+  width: auto;
+  background-color: rgb(200, 200, 200, .6);
+	border-radius: 20px;
+  padding: 10px;
+  color: rgb(229, 237, 76);
+  font-style: oblique;
+  font-size: 25px;
+	line-height: 1;
+  text-shadow: rgba(0, 0, 0, 1) 5px 5px 5px;
+	align-self: center;
+	z-index: 200;
+	}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 50px;
+}
+
+.container-menu {
+	width: 100%;
+}
+
+.container-menu a {
+	color: rgb(17, 88, 2);
+	background-color: #F3A530;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	display: block;
+}
+
+.container-menu a:hover {
+	color: rgb(161, 38, 38);
+	background-color: rgb(172, 166, 166);
+
+}
+
+.container-menu ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+}
+
+.container-menu li {
+		min-width: 150px;
+		border: 1px solid #367ABD;
+		border-radius: 20px;
+		position: relative;
+		cursor: pointer;
+		margin: 0;
+		font-size: larger;
+		transition: 0.1s;
+}
+
+.container-menu li:hover {
+	margin: 0 10px;
+}
+
+ul.dropdown {
+	display: flex;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s;
+}
+
+ul.dropdown li {
+	padding: 0px;
+	height: 0;
+	background-color: #F3A530;
+	width: 100px;
+
+	transition: 1s;
+}
+
+.container-menu li:hover .dropdown {
+
+	visibility: visible;
+	opacity: 1;
+}
+
+.container-menu li:hover .dropdown li {
+	padding: 0;
+	height: 100%;
+	margin-top: 1%;
+}
+
+/* Content
+-----------------------------------------------------------------------------*/
+
+.mainPagePhotos {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.mainPagePhotos a {
+	width: 48%;
+	height: auto;
+
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 auto 0 auto;
+
+	/*min-width: 600px;*/
+	width: 1400px;
+	height: auto;
+	background-color: #F3A530;
+	padding: 1%;
+  color: #367ABD;
+  font-family: 'Roboto Slab', serif;
+	margin-left: 10px;
+}
+
+.rights {
+  width: auto;
+  margin-left: 1%;
+  font-size: 1.5em;
+  margin-top: 5px;
+}
+
+.phone {
+  width: auto;
+  margin-top: 5px;
+	font-size: 2em;
+}
