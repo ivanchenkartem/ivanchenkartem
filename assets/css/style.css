@@ -79,7 +79,7 @@ html {
 	position: relative;
 	width: auto;
 	height: 300px;
-	margin: 10px;
+	margin-top: 10px;
 	justify-content: space-around;
 }
 
@@ -116,7 +116,9 @@ html {
 
 /* Middle Menu
 -----------------------------------------------------------------------------*/
-nav {background: #413F3C;}
+nav {
+	background: #413F3C;
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -135,21 +137,25 @@ nav a {
 .topmenu > li {
   float: left;
   position: relative;
-  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
-.topmenu > li:first-child {border-left: 0;}
+.topmenu > li:first-child {
+	border-left: 0;
+}
 .topmenu > li > a {
   padding: 20px 30px;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #FEFDFD;
   letter-spacing: 2px;
 }
 .topmenu > li > a.active,
-.submenu a:hover {color: #ddbe86;}
+.submenu a:hover {
+	color: #ddbe86;
+}
 .topmenu .fa,
 .submenu .fa {
-  margin-left: 5px;
+  margin: 5px;
   color: inherit;
 }
 .submenu {
@@ -166,11 +172,13 @@ nav a {
   transform: rotateX(-90deg);
   transition: .3s linear;
 }
-.submenu li {position: relative;}
+.submenu li {
+	position: relative;
+}
 .submenu li a {
   color: #282828;
   padding: 10px 20px;
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 1px solid #CBCBCC;
 }
 .submenu .submenu {
@@ -190,7 +198,7 @@ nav li:hover > .submenu {
 .content {
 	width: 1400px;
 	height: auto;
-	margin: 1%;
+	margin: 0;
 	padding: 0;
 	background-color: #85e9be;
 }
@@ -221,16 +229,16 @@ nav li:hover > .submenu {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 0 auto 0 auto;
+	padding: auto;
 
-	/*min-width: 600px;*/
+	min-width: 600px;
 	width: 1400px;
-	height: auto;
-	background-color: #F3A530;
-	padding: 1%;
-  color: #367ABD;
+	height: 70px;
+	background: #413F3C;
+	padding: 0;
+  color: #FEFDFD;
   font-family: 'Roboto Slab', serif;
-	margin-left: 10px;
+	margin: 0;
 }
 
 .rights {
@@ -238,10 +246,12 @@ nav li:hover > .submenu {
   margin-left: 1%;
   font-size: 1.5em;
 	align-self: flex-start;
+	color: #FEFDFD;
+
 }
 
 .phone {
   width: auto;
 	font-size: 2em;
-	align-self: center;
+	align-self: flex-end;
 }
