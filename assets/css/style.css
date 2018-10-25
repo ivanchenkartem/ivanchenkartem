@@ -222,6 +222,121 @@ nav li:hover > .submenu {
 }
 
 
+/* Content contactInformation
+-----------------------------------------------------------------------------*/
+.contactInformation {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contactInformation h2 {
+	line-height: 2;
+	font-size: 20px;
+}
+
+.contactInformation p {
+	line-height: 2;
+	font-size: 20px;
+}
+
+/* Content aboutUs
+-----------------------------------------------------------------------------*/
+.aboutUs {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 1%;
+	}
+
+#about {
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.aboutUs .headline {
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 2;
+	font-size: 20px;
+}
+
+.aboutUs p {
+	font-size: 16px;
+}
+
+/* Content checkout
+-----------------------------------------------------------------------------*/
+
+.checkout {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 1%;
+}
+
+#necessary {
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.checkout p {
+	font-size: 20px;
+	line-height: 2;
+}
+
+/* Content grapeArticles
+-----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
