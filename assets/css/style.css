@@ -274,6 +274,7 @@ nav li:hover > .submenu {
 
 .aboutUs p {
 	font-size: 16px;
+	line-height: 2;
 }
 
 /* Content checkout
@@ -304,38 +305,61 @@ nav li:hover > .submenu {
 
 /* Content grapeArticles
 -----------------------------------------------------------------------------*/
+.grapeArticles {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 1%;
+}
 
+#articles {
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 2;
+}
 
+.grapeArticles p {
+	font-size: 20px;
+	line-height: 4;
+}
 
+.grapeArticles a {
+	text-decoration: underline;
+	color: inherit;
+	text-transform: uppercase;
+}
 
+/* Content priceList
+-----------------------------------------------------------------------------*/
+caption {
+	text-transform: uppercase;
+	line-height: 2;
+	font-size: 20px;
+	font-weight: bold;
+}
 
+table {
+	width: 95%;
+	height: auto;
+	border-collapse: collapse;
+	text-align: left;
+	background-color: rgb(228, 230, 209);
+	border: 3px double #413F3C;
+	border-spacing: 5px;
+}
 
+table th {
+	padding: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+table td {
+	padding: 10px;
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/
